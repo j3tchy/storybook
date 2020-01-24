@@ -1,0 +1,78 @@
+import { Meta, Story, Preview, Props, ColorPalette, ColorItem, Description } from '@storybook/addon-docs/blocks';
+import HaloColorItem from '../../../components/HaloColorItem/HaloColorItem';
+import theme from '../../../theme/theme';
+
+<Meta title="Core|Colours" />
+
+# Colours
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam ullamcorper massa sit amet eleifend. Curabitur aliquam ut justo ut mattis. Mauris eu vulputate mauris. Cras iaculis, risus in maximus tempor, orci turpis dictum purus, eu dapibus arcu orci quis ex. Fusce faucibus vel leo non efficitur. 
+
+## Main
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam ullamcorper massa sit amet eleifend. 
+
+<ColorPalette>
+  <HaloColorItem
+    title="Primary"
+    subtitle="theme.palette.primary"
+    colors={Object.keys(theme.palette.primary).map(key => ({
+      key,
+      value: theme.palette.primary[key]
+    }))}
+  />
+  <HaloColorItem
+    title="Secondary"
+    subtitle="theme.palette.secondary"
+    colors={Object.keys(theme.palette.secondary).map(key => ({
+      key,
+      value: theme.palette.secondary[key]
+    }))}
+  />
+</ColorPalette>
+
+## Status
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam ullamcorper massa sit amet eleifend. 
+
+<ColorPalette>
+  <HaloColorItem
+    title="Status"
+    subtitle="theme.palette.status"
+    colors={Object.keys(theme.palette.status).map(key => ({
+      key,
+      value: theme.palette.status[key]
+    }))}
+  />
+  <HaloColorItem
+    title="Status Background"
+    subtitle="...palette.statusBackground"
+    colors={Object.keys(theme.palette.statusBackground).map(key => ({
+      key,
+      value: theme.palette.statusBackground[key]
+    }))}
+  />
+  <HaloColorItem
+    title="Status Text"
+    subtitle="...palette.statusText"
+    colors={Object.keys(theme.palette.statusText).map(key => ({
+      key,
+      value: theme.palette.statusText[key]
+    }))}
+  />
+</ColorPalette>
+
+## Grey
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam ullamcorper massa sit amet eleifend. 
+
+<ColorPalette>
+  <HaloColorItem
+    title="Grey"
+    subtitle="theme.palette.grey"
+    colors={Object.keys(theme.palette.grey).map(key => ({
+      key,
+      value: theme.palette.grey[key]
+    }))}
+  />
+</ColorPalette>

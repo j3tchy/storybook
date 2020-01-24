@@ -1,0 +1,59 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import Title from '../../../components/Typography/Title';
+import Body from '../../../components/Typography/Body';
+import Caption from '../../../components/Typography/Caption';
+
+<Meta title="Core|Typography" component={Title} />
+
+# Typography
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam ullamcorper massa sit amet eleifend. Curabitur aliquam ut justo ut mattis. Mauris eu vulputate mauris. Cras iaculis, risus in maximus tempor, orci turpis dictum purus, eu dapibus arcu orci quis ex. Fusce faucibus vel leo non efficitur. 
+
+## Headings
+
+<Preview>
+    <Story name="Headings">
+        <Title>Heading Large</Title>
+    </Story>
+</Preview>
+
+<Props of={Title} />
+
+<Preview>
+    <Story name="Heading Medium">
+        <Title variant='h2'>Heading Medium</Title>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Heading Small">
+        <Title variant='h3'>Heading Small</Title>
+    </Story>
+</Preview>
+
+## Body
+
+<Preview>
+    <Story name="Body">
+        <Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit augue. Integer lorem nulla, dignissim vel interdum nec, malesuada vitae dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </Body>
+    </Story>
+</Preview>
+
+<Props of={Body} />
+
+### Body Small
+
+<Preview>
+    <Story name="Body Small">
+        <Body variant='body2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit augue. Integer lorem nulla, dignissim vel interdum nec, malesuada vitae dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </Body>
+    </Story>
+</Preview>
+
+## Caption
+
+<Preview>
+    <Story name="Caption">
+        <Caption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit augue. Integer lorem nulla, dignissim vel interdum nec, malesuada vitae dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </Caption>
+    </Story>
+</Preview>
